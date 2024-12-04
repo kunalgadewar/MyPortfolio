@@ -58,7 +58,7 @@ ul li{
     border-radius: 50%;
     border: 1.5px solid var(--yellow-theme-main-color);
     animation: rotation 10s linear 1s infinite;
-    margin-left: 40px;
+    margin-left: 130px;
 }
 .serviceWrapper .innerContent .child-1{
     position: absolute;
@@ -99,9 +99,18 @@ ul li{
      .serviceWrapper .innerContent{
         width: 300px;
         height: 300px;
+        margin-left: 200px;
         background: radial-gradient(100px, var(--yellow-theme-main-color), transparent 120%);
      }
      .personalWrapper{
             width: 100%;
+     }
+}
+@media only screen and (max-width:480px){
+    .serviceWrapper .innerContent{
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+        background: radial-gradient(100px, var(--yellow-theme-main-color), transparent 120%);
      }
 }

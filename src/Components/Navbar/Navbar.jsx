@@ -36,7 +36,8 @@ const Navbar = () => {
   const [toggleIcon, setToggleIcon] =useState(false)
 
   const handleToggleIcon = ()=>{
-    setToggleIcon(!toggleIcon)
+    setToggleIcon(!toggleIcon);
+    document.body.classList.toggle('no-scroll', !toggleIcon);
   }
 
   return (
@@ -49,13 +50,13 @@ const Navbar = () => {
             </Link>
          </div>
 
-         <ul className={`navbar-cotainer-menu ${toggleIcon ? 'active' : ''} `}>
+         <ul className={`navbar-container-menu ${toggleIcon ? 'active' : ''} `}>
             {
                 data.map((item, key)=>{
                     return(
-                        <li key={key} className='navbar-cotainer-menu-item'>
+                        <li key={key} className='navbar-container-menu-item'>
 
-                        <Link className='navbar-cotainer-menu-item-links' to={item.to}>
+                        <Link className='navbar-container-menu-item-links' to={item.to}>
                                {item.label}
                         </Link>
 

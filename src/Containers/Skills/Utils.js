@@ -41,7 +41,7 @@ export const skillsData = [
                 percentage:"70"
             },
             {
-                skillName: "BOOTSTRAP",
+                skillName: "MATERIAL USER INTERFACE",
                 percentage:"80"
             },
             {
