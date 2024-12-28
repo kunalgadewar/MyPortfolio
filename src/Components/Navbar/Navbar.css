@@ -109,6 +109,9 @@
 }
 
 @media only screen and (max-width:480px){
+    .navbar-container-menu{
+        width: 430px;
+    }
     .navbar-container-menu-item:hover::after{
         width: 50%;
         background-color: var(--yellow-theme-main-color);
